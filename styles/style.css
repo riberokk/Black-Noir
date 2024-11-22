@@ -43,7 +43,6 @@ header{
     top: 0;
     width: 1920px;
     z-index: 100;
-    transition: top 0.3s ease-in-out;
 }
 
 header img{
@@ -80,7 +79,6 @@ header span a{
     margin-right: auto;
     height: 459px;
     display: flex;
-    cursor: all-scroll;
 }
 
 .info1 > img{
