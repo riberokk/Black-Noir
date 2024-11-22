@@ -290,11 +290,49 @@ header span a{
 }
 
 footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 78px;
+    position: relative;
     background-color: black;
     color: white;
-    font-size: 23px;
+    height: 300px;
+    padding: 15px;
+}
+
+.finfo .f1 .f2 .f3 .f4 .f5 > h1{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer span{
+    font-weight: bold;
+}
+
+.ecopy{
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.finfo{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.input{
+    width: 270px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: black;
+    border: white, solid 0.5px;
+}
+
+.input::placeholder{
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.custom{
+    font-size: 25px;
+    padding-inline: 8px;
 }
