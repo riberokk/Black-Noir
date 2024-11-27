@@ -15,8 +15,7 @@ font-family: 'Cinzel', sans-serif;
 
 
 .custom-icon{
-    font-size: 40px;
-    margin-right: 35px;
+    font-size: 30px;
 }
 
 .custom-icon3{
@@ -31,7 +30,7 @@ font-family: 'Cinzel', sans-serif;
 header{
     display: flex;
     background-color: black;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-weight: bold;
     height: 103px;
@@ -51,11 +50,21 @@ header img{
 
 header a{
     color: white;
-    font-size: 26px;
 }
 
-header span a{
+header a:hover{
     color: #6F4545;
+    transition: color 0.3s ease-out;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div a{
+    padding: 20px;
 }
 
 .bg1{
