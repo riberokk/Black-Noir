@@ -73,13 +73,12 @@
 
 .info1{
     font-family: 'Cinzel', sans-serif;
-    grid-template-columns: repeat(auto-fit, minmax(610px, 1fr));
-    gap: 550px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     display: flex;
     display: grid;
     justify-content: space-between;
     padding: 21px;
-    margin-top: 5%;
+    margin-top: 104px;
 }
 
 .info1 img {
@@ -114,7 +113,16 @@
     padding: 25px 80px;
     border-radius: 80px;
     font-weight: bold;
+    border: 1px solid white;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: black;
   }
+
+.comprar:hover{
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    border: solid black 0.5px;
+    transform: translateY(-2px);
+}
 
 .counter {
     display: flex;
@@ -131,7 +139,7 @@
     height: 45px;
     margin-top: 25px;
     right: 5%;
-    top: 41%;
+    top: 41.7%;
   }
 
   .btn {
@@ -196,8 +204,8 @@
     display: flex;
     position: absolute;
     flex-direction: column;
-    gap: 55px;
-    top: 14%;
+    gap: 45px;
+    top: 16%;
     left: 45%;
 }
   
@@ -208,6 +216,19 @@
     border-radius: 15px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.774);
     cursor: pointer;
+}
+
+.infor2 > img{
+  color: black;
+  border-radius: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0,);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: auto;
+}
+
+.infor2 > img:hover{
+  transform: translateY(-2px);
 }
 
 .info3 h1{
@@ -226,9 +247,45 @@
     margin-bottom: 150px;
 }
 
-@media screen and (max-width: 610px){
-    .info2{
-        position:absolute;
-        top: 50%;
-    }
+@media screen and (max-width: 1170px) and (max-height: 2532px){
+
+  .info1 img{
+    width: 1170px;
+    padding: 0;
+    border-radius: 0;
+    position: absolute;
+    top: 4%;
+    left: 0%;
+  }
+
+  .infor2{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    left: 15%;
+    top: 34%;
+  }
+
+  .info3{
+    position: absolute;
+    top: 60%;
+  }
+
+  .infor1{
+    position: absolute;
+    top: 45%;
+  }
+
+  .counter{
+    position: absolute;
+    top: 36%;
+    left: 52%;
+  }
+
+  .size-selector{
+    position: absolute;
+    top: 0%;
+    left: 127%;
+  }
+
 }
