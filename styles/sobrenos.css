@@ -20,28 +20,32 @@ body {
     color: white; 
     max-width: 1920px;
     margin: 0 auto;
-}
+} 
 
 .custom-icon{
   font-size: 30px;
 }
 
 .conteiner {
-    max-width: 1280px;
-    margin: auto;
+  max-width: 1280px;
+  margin: auto;
 }
 
 
 .flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.flex img{
+  width: 250px;
+  height: 100px;
+}
 
 header {
   width: 100%;
-  padding: 60px 4%;
+  padding: 0 4%;
   position: fixed;
   top: 0;
   left: 0;
@@ -49,6 +53,7 @@ header {
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(5px); 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
 }
 
 header i {
@@ -58,6 +63,9 @@ header i {
 
 header ul {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header ul li {
@@ -87,12 +95,12 @@ color: #6F4545; /* Cor de destaque ao passar o mouse */
     font-size: 74px;
     font-weight: bolder;
     text-align: center;
-    color: #ffffff;
+    color: #6F4545;
     background-color: transparent; 
 }
 
 .sobre1 h1 span {
-    color: #b93f00; 
+    color: #311A0E; 
 }
 
 .sobre1 h3 {
@@ -123,9 +131,13 @@ color: #6F4545; /* Cor de destaque ao passar o mouse */
 
 .title h1 {
   opacity: 0.5; 
-  text-align: center; 
+  text-align: center;
+  color: white;
 }
 
+.title h1 span {  
+  color: #8B4D2B;
+}
 
 .team {
   background-color: #D9D9D9;
