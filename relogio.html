@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse Black | Black Noir</title>
+    <link rel="stylesheet" href="styles/roupa.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+
+            <div class="flex">
+
+                <a href="index.html"><img src="imgs/logo/Logo - Black Noir.png" alt=""></a>
+                <nav>
+                    <ul>
+                    <li><a href="roupam.html">MASCULINAS</a></li>
+                    <li><a href="acessorios.html">ACESSÓRIOS</a></li>
+                    <li><a href="sobrenos.html">SOBRE NÓS</a></li>
+                    <li><a href="index.html"><i class="bi bi-person-circle custom-icon"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+    </header>
+
+    <div class="teste">
+        <section class="info1">
+            <img src="imgs/relogios/relogio.png" alt="">
+            <div class="infor1">
+                <h1>Conjunto<br>Eclipse Black</h1>
+                <h4>19997,90</h4>
+                <p>R$ 16997,90</p>
+                <div class="counter">
+                    <button class="btn" onclick="decrement()">-</button>
+                    <h3 id="value">1</h3>
+                    <button class="btn" onclick="increment()">+</button>
+                </div>
+                <a class="comprar" href="">Comprar</a>
+                <div class="size-selector">
+                    <div class="selected-size">
+                      <span>Tamanho:</span>
+                      <span class="value" id="current-size"></span>
+                    </div>
+                    <div class="size-options">
+                      <div class="size-option" data-size="P">P</div>
+                      <div class="size-option" data-size="PP">PP</div>
+                      <div class="size-option" data-size="M">M</div>
+                      <div class="size-option" data-size="G">G</div>
+                      <div class="size-option" data-size="GG">GG</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="info2">
+            <div class="infor2">
+                <img src="imgs/conjunto/Conjunto1.png" alt="" class="thumbnail" onclick="changeImage('imgs/conjunto/Conjunto1.png')">
+                <img src="imgs/conjunto/Conjunto2.png" alt="" class="thumbnail" onclick="changeImage('imgs/conjunto/Conjunto2.png')">
+                <img src="imgs/conjunto/Conjunto3.png" alt="" class="thumbnail" onclick="changeImage('imgs/conjunto/Conjunto3.png')">
+            </div>
+        </section>
+    
+        <section class="info3">
+            <h1>Sobre a Peça</h1>
+            <p>O conjunto do rapaz reflete elegância clássica e simplicidade nostálgica. O colete preto e a camisa listrada sugerem um gosto tradicional, enquanto o chapéu de lã evoca memórias de outra época, talvez de um artista ou escritor que valoriza peças com história e significado.</p>
+        </section>
+    </div>
+
+    <script>
+        let count = 1;
+
+        function increment() {
+        count++;
+        document.getElementById('value').innerText = count;
+        }
+
+        function decrement() {
+        if (count > 0) count--;
+        document.getElementById('value').innerText = count;
+        }
+
+        const currentSizeElement = document.getElementById("current-size");
+        const sizeOptions = document.querySelectorAll(".size-option");
+
+        sizeOptions.forEach(option => {
+        option.addEventListener("click", () => {
+            // Atualiza o tamanho selecionado
+            currentSizeElement.textContent = option.dataset.size;
+
+            // Atualiza a classe ativa
+            document.querySelector(".size-option.active")?.classList.remove("active");
+            option.classList.add("active");
+        });
+        });
+
+        function changeImage(imageSrc) {
+    const image = document.querySelector(".info1 img");
+    
+    // Inicia o fade out
+    image.style.opacity = 0;
+
+    // Espera a transição de opacidade terminar
+    setTimeout(() => {
+        // Altera a fonte da imagem
+        image.src = imageSrc;
+        
+        // Aplica fade in
+        image.style.opacity = 1;
+    }, 250); // Tempo da transição (mesmo que o 'transition' no CSS)
+}
+
+    </script>
+
+</body>
+</html>

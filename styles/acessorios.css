@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
@@ -11,6 +10,10 @@ outline:0;
 box-sizing: border-box;
 list-style: none;
 text-decoration:none;
+}
+
+body{
+    background-color: black;
 }
 
 .corpo{
@@ -95,6 +98,8 @@ footer{
 }
 
 .info1{
+    background: url("/imgs/relogios/FotoRelogio.png") center center/cover;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     margin: 36px 36px 0 36px;
@@ -102,12 +107,8 @@ footer{
     margin-right: auto;
     margin-top: 103px;
     font-family: 'Cinzel', sans-serif;   
-}
-
-.foto-info1{
     width: 100%;
     height: 900px;
-    margin-bottom: 10px;
     position: relative;
 }
 
@@ -115,21 +116,46 @@ footer{
     position: absolute;
     font-weight: bold;
     font-size: 86px;
-    top: 40%;
-    left: 0%;
+    top: 5%;
+    left: 50%;
 }
 
 .texto2-info1{
     position: absolute;
-    font-size: 53px;
+    font-size: 115px;
     font-weight: bold;
-    right: 5%;
-    top: 38%;
+    color: #2600FF;
+    right: 12%;
+    top: 35%;
+    text-shadow: 0 0 55px rgba(34, 17, 125, 0.685);  
 }
 
 .texto2-info1 span{
     color: white;
     text-decoration: line-through;
+}
+
+.texto3-info1{
+    position: absolute;
+    right: 20%;
+    top: 55%;
+}
+
+.texto3-info1 a{
+    background-color: #8687D2;
+    font-size: 35px;
+    padding: 20px 55px;
+    border-radius: 60px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    border: solid black 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.texto3-info1 a:hover{
+    box-shadow: 0 0 26px rgb(255, 255, 255);
+    border: solid white 0.2px;
 }
 
 .preço{
@@ -138,62 +164,23 @@ footer{
     text-underline-offset: 7px;
 }
 
-.roupa{
-    color: #492613;
+.roupa1{
+    font-size: 110px;
+    color: #22117D;
+    text-shadow: 0 0 25px rgba(38, 0, 255, 0.685);
 }
 
-.oferta{
-    color: #FFA366;
-}
-
-.texto-info1 h1{
-    background-color: #F0B189;
-    font-family: "Cinzel Decorative", serif;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 10px 5px;
-    width: 400px;
-    font-size: 53px;
-}
-
-.texto-info1 h2{
-    text-align: center;
-    font-size: 53px;
-    color: #3A1501;
-}
-
-.texto-info1 h3{
-    text-align: center;
-    font-size: 35px;
-}
-
-.texto-info1 h3 span{
-    text-decoration: line-through;
-    color: white;
-}
-
-.texto-info1 h4{
-    text-align: center;
-    font-size: 53px;
-}
-
-.texto-info1 h4 span{
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    color: white;
-    font-size: 70px;
-}
-
-.texto-info1 h4 span:hover{
-    color: red;
+.roupa2{
+    font-size: 110px;
+    color: #22117D;
+    margin-left: 100px;
+    text-shadow: 0 0 25px rgba(38, 0, 255, 0.685);  
 }
 
 .produtos{
     color: #727272;
     font-size: 26px;
-    margin-left: 32px;
-    margin-block: 30px;
+    padding: 38px;
 }
 
 .info2 img{
@@ -248,4 +235,8 @@ footer{
 .produto:hover{
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.roupas{
+    background-color: white;
 }
