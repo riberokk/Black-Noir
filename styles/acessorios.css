@@ -94,7 +94,8 @@ footer{
     background-color: black;
     color: white;
     font-size: 23px;
-    cursor: default;
+    cursor: default;    
+    margin-top: 650px;
 }
 
 .info1{
@@ -164,13 +165,13 @@ footer{
     text-underline-offset: 7px;
 }
 
-.roupa1{
+.nome1{
     font-size: 110px;
     color: #22117D;
     text-shadow: 0 0 25px rgba(38, 0, 255, 0.685);
 }
 
-.roupa2{
+.nome2{
     font-size: 110px;
     color: #22117D;
     margin-left: 100px;
@@ -239,4 +240,46 @@ footer{
 
 .roupas{
     background-color: white;
+}
+
+.info4{
+    background-color: black;
+    display: flex;
+}
+
+.relogio-info4 > img{
+    display: flex;
+    position: absolute;
+    width: 680px;
+    height: 620px; 
+    left: 4%;
+}
+
+.texto-info4 > img{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 320%;
+    width: 680px;
+    height: 200px;
+}
+
+.texto2-info4{
+    display: flex;
+    position: absolute;
+    left: 65%;
+    top: 345%;
+    font-size: 110px;
+    color: #8B4D2B;
+}   
+
+.texto3-info4{
+    display: flex;
+    position: absolute;
+    left: 43%;
+    top: 360%;
+    font-weight: bold;
+    font-size: 110px;
+    color: #FF0000;
+    font-family: 'Cinzel Decorative', serif;
 }
