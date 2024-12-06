@@ -86,7 +86,7 @@
   }
 
   .bg{
-    background-image: url('/imgs/fundos/fundo1.png');
+    background-image: url('../imgs/fundos/fundo1.png');
     width: 1920px;
     height: 1080px;
     margin-left: auto;
