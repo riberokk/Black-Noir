@@ -86,7 +86,7 @@
   }
 
   .bg{
-    background-image: url('/imgs/fundos/fundo1.png');
+    background-image: url('./imgs/fundos/fundo1.png');
     width: 1920px;
     height: 1080px;
     margin-left: auto;
@@ -211,7 +211,7 @@
   }
 }
   .bg3{
-      background-image: url('/imgs/fundos/fundo2.png');
+      background-image: url('./imgs/fundos/fundo2.png');
       width: 1920px;
       height: 1080px;
       margin-left: auto;
@@ -323,7 +323,7 @@
   }
 
   .bg5 {
-    background-image: url('/imgs/fundos/fundo3.png');
+    background-image: url('./imgs/fundos/fundo3.png');
     background-size: cover; 
     background-position: center;
     max-width: 1920px;
