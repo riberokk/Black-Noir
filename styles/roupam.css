@@ -86,7 +86,7 @@ body{
   }
 
 .info1{
-    background: url("./imgs/fundos/FotoConjunto.png") center center/cover;
+    background: url("../imgs/fundos/FotoConjunto.png") center center/cover;
     background-attachment: fixed;
     display: flex;
     align-items: center;
