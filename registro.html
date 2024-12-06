@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="icon" href="imgs/logo/logo-site.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/acessorios.css"> 
-        <title></title> 
+    <title>Login | Black Noir</title> 
+    <link rel="stylesheet" href="styles/registro.css"> 
 </head>
 <body>
-    <div class="corpo"> 
-        
         <!-- CABEÇARIO -->
         <header>
             <div class="flex">
@@ -32,77 +29,50 @@
             </div>
         </header>
 
-        <!-- SEÇÃO PRINCIPAL DESTACANDO O PRODUTO -->
-        <div>
-            <section class="info1">
-                <div class="texto-info1">
-                    <p class="nome1">Vanguard</p> <!-- NOME DO PRODUTO -->
-                    <p class="nome2">MontClair</p> <!-- MODELO DO PRODUTO -->
+    <!-- SEÇÃO PRINCIPAL PARA REGISTRO DE CONTA -->
+    <section>
+        <h1>Registre sua Conta</h1> <!-- TITULO DA SEÇÃO -->
+        <div class="formulario"> <!-- DIV PARA A ESTILIZAÇÃO DO FORMULARIO-->
+            <form action=""> <!-- FORMULARIO SEM AÇÃO DEFINIDA -->
+                <!-- CAMPO PARA O E-MAIL -->
+                <label class="label-email" for="">E-mail</label>
+                <div class="email">
+                    <br>
+                    <input class="input-email" type="email"> <!-- INPUT PARA O ENDEREÇO DO E-MAIL -->
                 </div>
-                <div class="texto2-info1">
-                    <p>R$ 5500,00</p> <!-- PREÇO DO PRODUTO -->
+                
+                <!-- CAMPO PARA O CPF -->
+                <label class="label-cpf" for="">CPF</label>
+                <div class="cpf">
+                    <br>
+                    <input class="input-cpf" type="text"> <!-- INPUT PARA O CPF -->
                 </div>
-                <div class="texto3-info1">
-                    <a href="relogio.html">Comprar</a> <!-- LINK PARA A PAGINA DE COMPRA -->
+
+                <!-- CAMPO PARA A SENHA -->
+                <label class="label-senha" for="">Senha</label>
+                <div class="senha">
+                    <br>
+                    <input class="input-senha" type="password"> <!-- INPUT PARA A SENHA -->
                 </div>
-            </section>
+                
+                <!-- CHECKBOX PARA SE MANTER CONECTADO-->
+                <div class="checkbox">
+                    <input class="input-check" type="checkbox">
+                    <p>Continuar Conectado</p>
+                </div>
+
+                <!-- BOTÃO DE REGISTRO -->
+                <div class="botao">
+                    <a href="">Registrar</a>
+                </div>
+
+                <!-- LINK PARA LOGIN CASO JA TENHA UMA CONTA CADASTRADA -->
+                <div class="registro">
+                    <a href="login.html">Já tem uma conta? <span>Entrar</span></a>
+                </div>
+            </form>
         </div>
-
-        <!-- SEÇÃO EXIBINDO A LISTA DE PRODUTOS -->
-        <div class="roupas">
-            <h1 class="produtos">06 Produtos</h1> <!-- TITULO DA SEÇÃO -->
-
-            <!-- PRIMEIRA LINHA DOS PRODUTOS -->
-            <section class="info2">
-                <div class="produto">
-                    <img src="./imgs/relogios/ben-mathis-seibel-Ha2a7s_pdTA-unsplash.jpg" alt="Produto 1">
-                    <p>Heritage Sweats<br> R$ 8.130,50</p>
-                </div>
-                <div class="produto">
-                    <img src="imgs/relogios/Design sem nome (4).png" alt="Produto 2">
-                    <p>Rban Tee <br> R$ 14.270,90</p>
-                </div>
-                <div class="produto">
-                    <img src="imgs/relogios/Design sem nome (5).png" alt="Produto 3">
-                    <p>Magic Legacy  <br> R$ 11.420,90</p>
-                </div>
-            </section>
-
-            <!-- SEGUNDA LINHA DOS PRODUTOS -->
-            <section class="info3">
-                <div class="produto">
-                    <img src="imgs/relogios/Relogio 6.jpg" alt="Produto 4">
-                    <p>Roots Essen Hoodie <br> R$ 20.400,90</p>
-                </div>
-                <div class="produto">
-                    <img src="imgs/relogios/re5.png" alt="Produto 5">
-                    <p>Rrior’s Jogger <br> R$ 10.495,90</p>
-                </div>
-                <div class="produto">
-                    <img src="imgs/relogios/re6.png" alt="Produto 6">
-                    <p>Acy Tee <br> R$ 6.115,70</p>
-                </div>
-            </section>
-        </div>
-
-        <!-- SEÇÃO DE DESTAQUE ADICIONAL -->
-        <section class="info4">
-            <div class="relogio-info4">
-                <img src="imgs/relogios/FotoRelogio2.png" alt=""> <!-- IMAGEM EM DESTAQUE -->
-            </div>
-            <div class="textos-info4">
-                <div class="texto-info4">
-                    <img src="imgs/logo/LogoBlackNoir.png" alt=""> <!-- LOGO ADICIONAL -->
-                </div>
-                <div class="texto2-info4">
-                    <p>X</p> 
-                </div>
-                <div class="texto3-info4">
-                    <p>The GodFather</p> <!-- TITULO DE UM PRODUTO SENDO EXIBIDO  -->
-                </div>
-            </div>
-        </section>
-    </div>
+    </section>
 
     
         <!-- RODAPÉ DA PAGINA -->
@@ -156,8 +126,6 @@
                 </form>
             </div>
         </footer>
-
-    <!-- IMPORTAÇÃO DE SCRIPT EM JAVASCRIPT -->
-    <script src="scripts/main.js"></script>
+        
 </body>
 </html>

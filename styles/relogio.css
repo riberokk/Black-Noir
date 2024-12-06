@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    margin: 0;
+  padding:0;
+  border:0;
+  outline:0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration:none;
+  }
+
+  .conteiner {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 2%;
+  }
+  
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .flex img{
+    width: 250px;
+    height: 100px;
+  }
+  
+  header {
+    width: 100%;
+    padding: 0 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    background-color: rgba(0, 0, 0);
+    backdrop-filter: blur(5px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    font-family: 'Cinzel', sans-serif;
+  }
+  
+  header i {
+    font-size: 30px;
+    color: white;
+  }
+  
+  header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header ul li {
+    display: inline-block;
+    margin: 0 40px;
+  }
+  
+  header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  header ul li a:hover {
+  color: #6F4545; /* Cor de destaque ao passar o mouse */
+  }
+
+  .info1 {
+    display: grid;
+    display: flex;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 124px;
+    margin-left: 20px;
+    margin-right: auto;
+  }
+  
+  .info1 > img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 10px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .infor1 {
+    position: absolute;
+    left: 57%;
+  }
+  
+  .infor1 h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 80px;
+    color: #191CB0;
+    margin-bottom: 20px;
+  }
+  
+  .infor1 h4 {
+    font-size: 42px;
+    font-weight: bold;
+  }
+  
+  .infor1 p {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .comprar {
+    display: inline-block;
+    background-color: #8687D2;
+    font-family: "Cinzel", serif;
+    font-size: 38px;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: black;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: absolute;
+    top: 115%;
+  }
+  
+  .comprar:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+  }
+  
+  .counter {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 25px;
+    background: #f8f8f8;
+    border-radius: 35px;
+    padding: 15px 40px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    width: fit-content;
+    margin: 20px auto;
+    top: 112%;
+    left: 100%;
+  }
+  
+  .counter .btn {
+    font-size: 28px;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .counter .btn:hover {
+    color: #8B4D2B;
+  }
+  
+  .counter #value {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .size-selector{
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 160%;
+    left: 10%;
+  }
+  
+  .selected-size {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Cinzel', sans-serif;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    width: 400px;
+    height: 55px;
+  }
+  
+  .size-options {
+    padding: 10px;
+    
+  }
+  
+  .size-option {
+    padding: 5px 10px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .size-option.active {
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .info2 {
+    padding: 20px;
+  }
+  
+  .infor2 {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    top: 13.5%;
+    left: 45%;
+  }
+  
+  .infor2 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+  }
+  
+  .infor2 img:hover {
+    transform: scale(1.05);
+  }
+  
+  .info3 h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 38px;
+    text-align: left;
+    margin: 20px 40px;
+  }
+  
+  .info3 p {
+    font-family: "Playfair", serif;
+    font-size: 28px;
+    text-align: left;
+    margin: 10px 40px 80px 40px;
+  }
+  
+/* Rodapé */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: black;
+}
+
+footer h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+
+footer a {
+  display: block;
+  color: white;
+  font-size: 15px;
+  margin: 5px 0;
+  font-family: 'Playfair', sans-serif;
+  margin-bottom: 15px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 15px;
+  color: white;
+  font-family: 'Playfair', sans-serif;
+  margin-bottom: 15px; /* Espaçamento pequeno entre os parágrafos */
+}
+
+.redes {
+  font-size: 30px;  
+  display: flex; /* Certifique-se de que o container de ícones esteja em flex */
+  gap: 20px; /* Ajuste a distância entre os ícones */
+  transform: translate(15px, 5%);
+}
+
+.redes i {
+  font-size: 30px; /* Ajuste o tamanho dos ícones */
+}
+
+
+.inscreva-se input {
+  width: 100%;
+  padding: 18px;
+  font-size: 20px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: #fff;
+}

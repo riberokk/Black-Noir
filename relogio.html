@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Eclipse Black | Black Noir</title>
+    <link rel="stylesheet" href="styles/relogio.css"> 
+</head>
+<body>
+        <!-- CABEÇARIO -->
+        <header>
+            <div class="flex">
+            <a href="index.html">
+                <img src="imgs/logo/Logo - Black Noir.png" alt="Black Noir Logo">
+            </a>
+            <nav>
+                <ul>
+                <!-- MENU DE NAVEGAÇÃO -->
+                <li><a href="roupam.html">Masculinas</a></li>
+                <!-- LINK PARA A PAGINAS DE ROUPAS MASCULINA -->
+                <li><a href="acessorios.html">Acessórios</a></li>
+                <!-- LINK PARA A PAGINAS DE ACESSORIOS -->
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <!-- LINK PARA A PÁGINA "SOBRE NOS" -->
+                <li><a href="login.html"><i class="bi bi-person-circle custom-icon"></i></a></li>
+                <!-- LINK PARA A PAGINAS A DE LOGIN -->
+                </ul>
+            </nav>
+            </div>
+        </header>
+
+    <!-- SEÇÃO PRINCIPAL -->
+    <div class="teste">
+        <!-- INFORMAÇÕES SOBRE O PRODUTO -->
+        <section class="info1">
+            <img src="imgs/relogios/RelogioVenda.png" alt=""> <!-- IMAGEM DO PRODUTO -->
+            <div class="infor1">
+                <h1>Vanguard</h1> <!-- NOME DO PRODUTO -->
+                <h4>R$ 5500.00</h4> <!-- PREÇO DO PRODUTO -->
+                <!-- CONTADOR PARA A QUANTIDADE -->
+                <div class="counter">
+                    <button class="btn" onclick="decrement()">-</button> <!-- BOTÃO PARA REDUZIR  -->
+                    <h3 id="value">1</h3> <!-- VALOR ATUAL DA QUANTIDADE -->
+                    <button class="btn" onclick="increment()">+</button> <!-- BOTÃO PARA AUMENTAR -->
+                </div>
+                <!-- BOTÃO DE COMPRA -->
+                <a class="comprar" href="">Comprar</a>
+                <!-- SELEÇÃO DE MEDIDAS -->
+                <div class="size-selector">
+                    <div class="selected-size">
+                      <span>Medidas:</span>
+                      <span class="value" id="current-size"></span> <!-- MEDIDA SELECIONADA -->
+                    </div>
+                    <div class="size-options">
+                      <div class="size-option" data-size="25mm">25mm</div>
+                      <div class="size-option" data-size="26mm">26mm</div>
+                      <div class="size-option" data-size="27mm">27mm</div>
+                      <div class="size-option" data-size="28mm">28mm</div>
+                      <div class="size-option" data-size="29mm">29mm</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- THUMBNAILS PARA AS IMAGENS ADICIONAIS -->
+        <section class="info2">
+            <div class="infor2">
+                <img src="imgs/relogios/RelogioVenda.png" alt="" class="thumbnail" onclick="changeImage('imgs/relogios/RelogioVenda.png')">
+                <img src="imgs/relogios/RelogioVenda2.png" alt="" class="thumbnail" onclick="changeImage('imgs/relogios/RelogioVenda2.png')">
+            </div>
+        </section>
+    
+        <!-- DESCRIÇÃO SOBRE O PRODUTO -->
+        <section class="info3">
+            <h1>Sobre a Peça</h1>
+            <p>Este relógio, com seu design imponente e detalhes refinados, complementa a elegância discreta do traje, simbolizando não apenas o controle do tempo, mas a harmonia entre sofisticação e resistência.</p>
+        </section>
+    </div>
+
+        <!-- RODAPÉ DA PAGINA -->
+        <footer>
+            <!-- INFORMAÇÕES IMPORTANTES -->
+            <div>
+                <h3>Informações Importantes</h3>
+                <!-- LINKS ÚTEIS PARA NAVEGAÇÃO E SUPORTE -->
+                <a href="#">Pesquisa</a>
+                <a href="#">Rastreamento</a>
+                <a href="#">Catálogo</a>
+                <a href="#">FAQ</a>
+                <a href="#">Envio e Prazo de Entrega</a>
+                <a href="#">Trocas e Devoluções</a>
+                <a href="#">Contato</a>
+            </div>
+            
+            <!-- SEÇÃO DAS POLITICAS DA EMPRESA -->
+            <div>
+                <h3>Nossas Políticas</h3>
+                <!-- LINKS PARA PAGINA DE POLITICAS LEGAIS -->
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Política de Troca e Devolução</a>
+                <a href="#">Política de Envio</a>
+                <a href="#">Termos de Serviço</a>
+            </div>
+            
+            <!-- SEÇÃO DA CENTRAL DE ATENDIMENTOS E REDES SOCIAIS -->
+            <div>
+                <h3>Central de Atendimento</h3>
+                <p>Contato para Atendimento:</p>
+                <p>WhatsApp: (11) 94567-7890</p>
+                
+            <!-- LINKS PARA REDES SOCIAIS -->
+            <div>
+                <h3>Redes Sociais</h3>
+            </div>
+             <div class="redes">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <!-- SEÇÃO PARA O USUARIO SE INSCREVER COM SEU E-MAIL -->
+            <div>
+                <h3>Receba Nossas Informações</h3>
+                <!-- FORMULARIO SIMPLES PARA O CADASTRO DO E-MAIL -->
+                <form class="inscreva-se">
+                    <input type="email" placeholder="Seu e-mail">
+                </form>
+            </div>
+        </footer>
+        
+    <!-- SCRIPT JAVASCRIPT -->
+    <script>
+        let count = 1;
+
+        function increment() {
+            count++;
+            document.getElementById('value').innerText = count; // ATUALIZA O VALOR NO CONTADOR
+        }
+
+        function decrement() {
+            if (count > 0) count--;
+            document.getElementById('value').innerText = count; // ATUALIZA O VALOR NO CONTADOR 
+        }
+
+        // SELEÇÃO DOS TAMANHOS
+        const currentSizeElement = document.getElementById("current-size");
+        const sizeOptions = document.querySelectorAll(".size-option");
+
+        sizeOptions.forEach(option => {
+            option.addEventListener("click", () => {
+                currentSizeElement.textContent = option.dataset.size; // ATUALIZA A MEDIDA SELECIONADA
+                document.querySelector(".size-option.active")?.classList.remove("active");
+                option.classList.add("active");
+            });
+        });
+
+        // FUNÇÃO PARA TROCAR AS IMAGENS AO CLICAR NAS THUMBNAILS
+        function changeImage(imageSrc) {
+            const image = document.querySelector(".info1 img");
+            image.style.opacity = 0; // FADE OUT
+            setTimeout(() => {
+                image.src = imageSrc; // ALTERA A IMAGEM
+                image.style.opacity = 1; // FADE IN
+            }, 250);
+        }
+    </script>
+
+</body>
+</html>

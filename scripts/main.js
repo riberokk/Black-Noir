@@ -15,3 +15,4 @@ if (currentScrollPosition > lastScrollPosition) {
 
 lastScrollPosition = currentScrollPosition;
 });
+
