@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Black Noir</title>
-    <link rel="stylesheet" href="styles/login.css"> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Login | Black Noir</title> 
+    <link rel="stylesheet" href="styles/registro.css"> 
 </head>
 <body>
         <!-- CABEÇARIO -->
@@ -30,39 +29,46 @@
             </div>
         </header>
 
-    <!-- SEÇÃO PRINCIPAL PARA LOGIN -->
+    <!-- SEÇÃO PRINCIPAL PARA REGISTRO DE CONTA -->
     <section>
-        <h1>Entrar na Conta</h1> <!-- TITULO DA PAGINA -->
-        <div class="formulario"> <!-- DIV PARA A ESTILIZAÇÃO DO FORMULARIO -->
-            <form action="">
-                <!-- CAMPO PARA O E-MAIL-->
+        <h1>Registre sua Conta</h1> <!-- TITULO DA SEÇÃO -->
+        <div class="formulario"> <!-- DIV PARA A ESTILIZAÇÃO DO FORMULARIO-->
+            <form action=""> <!-- FORMULARIO SEM AÇÃO DEFINIDA -->
+                <!-- CAMPO PARA O E-MAIL -->
                 <label class="label-email" for="">E-mail</label>
                 <div class="email">
                     <br>
-                    <input class="input-email" type="email"> <!-- CAMPO DE ENTRADA PARA E-MAIL-->
+                    <input class="input-email" type="email"> <!-- INPUT PARA O ENDEREÇO DO E-MAIL -->
+                </div>
+                
+                <!-- CAMPO PARA O CPF -->
+                <label class="label-cpf" for="">CPF</label>
+                <div class="cpf">
+                    <br>
+                    <input class="input-cpf" type="text"> <!-- INPUT PARA O CPF -->
                 </div>
 
                 <!-- CAMPO PARA A SENHA -->
                 <label class="label-senha" for="">Senha</label>
                 <div class="senha">
                     <br>
-                    <input class="input-senha" type="password"> <!--CAMPO DE ENTRADA PARA A SENHA -->
+                    <input class="input-senha" type="password"> <!-- INPUT PARA A SENHA -->
                 </div>
                 
-                <!-- CHECBOX PARA MANTER O USUARIO CONECTADO -->
+                <!-- CHECKBOX PARA SE MANTER CONECTADO-->
                 <div class="checkbox">
                     <input class="input-check" type="checkbox">
                     <p>Continuar Conectado</p>
                 </div>
 
-                <!-- BOTÃO DE LOGIN -->
+                <!-- BOTÃO DE REGISTRO -->
                 <div class="botao">
-                    <a href="">Entrar</a>
+                    <a href="">Registrar</a>
                 </div>
 
-                <!-- LINK PARA REGISTRO -->
+                <!-- LINK PARA LOGIN CASO JA TENHA UMA CONTA CADASTRADA -->
                 <div class="registro">
-                    <a href="registro.html">Ainda não tem uma conta? <span>Registrar-se</span></a>
+                    <a href="login.html">Já tem uma conta? <span>Entrar</span></a>
                 </div>
             </form>
         </div>

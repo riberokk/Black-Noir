@@ -83,7 +83,7 @@
     margin-right: auto;
   }
   
-  .info1 img {
+  .info1 > img {
     width: 100%;
     max-width: 800px;
     height: auto;
@@ -99,15 +99,14 @@
   
   .infor1 h1 {
     font-family: 'Cinzel', serif;
-    font-size: 52px;
-    color: #492613;
+    font-size: 80px;
+    color: #191CB0;
     margin-bottom: 20px;
   }
   
   .infor1 h4 {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: bold;
-    text-decoration: line-through;
   }
   
   .infor1 p {
@@ -118,7 +117,7 @@
   
   .comprar {
     display: inline-block;
-    background-color: #8B4D2B;
+    background-color: #8687D2;
     font-family: "Cinzel", serif;
     font-size: 38px;
     padding: 15px 50px;
@@ -246,4 +245,59 @@
     margin: 10px 40px 80px 40px;
   }
   
-  
+/* Rodapé */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: black;
+}
+
+footer h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+
+footer a {
+  display: block;
+  color: white;
+  font-size: 15px;
+  margin: 5px 0;
+  font-family: 'Playfair', sans-serif;
+  margin-bottom: 15px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 15px;
+  color: white;
+  font-family: 'Playfair', sans-serif;
+  margin-bottom: 15px; /* Espaçamento pequeno entre os parágrafos */
+}
+
+.redes {
+  font-size: 30px;  
+  display: flex; /* Certifique-se de que o container de ícones esteja em flex */
+  gap: 20px; /* Ajuste a distância entre os ícones */
+  transform: translate(15px, 5%);
+}
+
+.redes i {
+  font-size: 30px; /* Ajuste o tamanho dos ícones */
+}
+
+
+.inscreva-se input {
+  width: 100%;
+  padding: 18px;
+  font-size: 20px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: #fff;
+}

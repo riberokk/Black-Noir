@@ -84,18 +84,6 @@ body{
   header ul li a:hover {
   color: #6F4545; /* Cor de destaque ao passar o mouse */
   }
-  
-
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 78px;
-    background-color: black;
-    color: white;
-    font-size: 23px;
-    cursor: default;
-}
 
 .info1{
     background: url("/imgs/fundos/FotoConjunto.png") center center/cover;
@@ -235,4 +223,61 @@ footer{
 
 .roupas{
     background-color: white;
+}
+
+/* Rodapé */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: black;
+}
+
+footer h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+
+footer a {
+  display: block;
+  color: white;
+  font-size: 15px;
+  margin: 5px 0;
+  font-family: 'Playfair', sans-serif;
+  margin-bottom: 15px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 15px;
+  color: white;
+  font-family: 'Playfair', sans-serif;
+  margin-bottom: 15px; /* Espaçamento pequeno entre os parágrafos */
+}
+
+.redes {
+  font-size: 30px;  
+  display: flex; /* Certifique-se de que o container de ícones esteja em flex */
+  gap: 20px; /* Ajuste a distância entre os ícones */
+  transform: translate(15px, 5%);
+}
+
+.redes i {
+  font-size: 30px; /* Ajuste o tamanho dos ícones */
+}
+
+
+.inscreva-se input {
+  width: 100%;
+  padding: 18px;
+  font-size: 20px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: #fff;
 }

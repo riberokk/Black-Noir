@@ -7,108 +7,186 @@
     <link rel="stylesheet" href="styles/roupa.css">
 </head>
 <body>
-    <header id="header">
-        <div class="container">
-
+        <!-- CABEÇARIO -->
+        <header>
             <div class="flex">
-
-                <a href="index.html"><img src="imgs/logo/Logo - Black Noir.png" alt=""></a>
-                <nav>
-                    <ul>
-                    <li><a href="roupam.html">MASCULINAS</a></li>
-                    <li><a href="acessorios.html">ACESSÓRIOS</a></li>
-                    <li><a href="sobrenos.html">SOBRE NÓS</a></li>
-                    <li><a href="index.html"><i class="bi bi-person-circle custom-icon"></i></a></li>
-                    </ul>
-                </nav>
+            <a href="index.html">
+                <img src="imgs/logo/Logo - Black Noir.png" alt="Black Noir Logo">
+            </a>
+            <nav>
+                <ul>
+                <!-- MENU DE NAVEGAÇÃO -->
+                <li><a href="roupam.html">Masculinas</a></li>
+                <!-- LINK PARA A PAGINAS DE ROUPAS MASCULINA -->
+                <li><a href="acessorios.html">Acessórios</a></li>
+                <!-- LINK PARA A PAGINAS DE ACESSORIOS -->
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <!-- LINK PARA A PÁGINA "SOBRE NOS" -->
+                <li><a href="login.html"><i class="bi bi-person-circle custom-icon"></i></a></li>
+                <!-- LINK PARA A PAGINAS A DE LOGIN -->
+                </ul>
+            </nav>
             </div>
-    </div>
-    </header>
+        </header>
 
+    <!-- SEÇÃO PRINCIPAL DO PRODUTO -->
     <div class="teste">
         <section class="info1">
             <img src="imgs/conjunto/Conjunto1.png" alt="">
+            <!-- IMAGEM PRINCIPAL DO PRODUTO -->
             <div class="infor1">
                 <h1>Conjunto<br>Eclipse Black</h1>
+                <!-- NOME DO PRODUTO -->
                 <h4>19997,90</h4>
+                <!-- PREÇO ORIGINAL -->
                 <p>R$ 16997,90</p>
+                <!-- PREÇO COM DESCONTO -->
                 <div class="counter">
+                    <!-- -CONTADOR DE QUANTIDADE -->
                     <button class="btn" onclick="decrement()">-</button>
                     <h3 id="value">1</h3>
+                    <!-- VALOR INICIAL DE QUANTIDADE-->
                     <button class="btn" onclick="increment()">+</button>
                 </div>
                 <a class="comprar" href="">Comprar</a>
+                <!-- LINK PARA A COMPRA UTILIZANDO O BOTÃO -->
                 <div class="size-selector">
+                    <!-- SELETOR DE TAMANHOS -->
                     <div class="selected-size">
-                      <span>Tamanho:</span>
-                      <span class="value" id="current-size"></span>
+                        <span>Tamanho:</span>
+                        <span class="value" id="current-size"></span>
+                        <!-- EXIBE  TAMANHO SELECIONADO -->
                     </div>
                     <div class="size-options">
-                      <div class="size-option" data-size="P">P</div>
-                      <div class="size-option" data-size="PP">PP</div>
-                      <div class="size-option" data-size="M">M</div>
-                      <div class="size-option" data-size="G">G</div>
-                      <div class="size-option" data-size="GG">GG</div>
+                        <!-- OPÇÕES DE TAMANHO DISPONIVEIS-->
+                        <div class="size-option" data-size="P">P</div>
+                        <div class="size-option" data-size="PP">PP</div>
+                        <div class="size-option" data-size="M">M</div>
+                        <div class="size-option" data-size="G">G</div>
+                        <div class="size-option" data-size="GG">GG</div>
                     </div>
                 </div>
             </div>
         </section>
-    
+
+        <!-- SEÇÃO DE IMAGENS ADICIONAIS -->
         <section class="info2">
             <div class="infor2">
                 <img src="imgs/conjunto/Conjunto1.png" alt="" class="thumbnail" onclick="changeImage('imgs/conjunto/Conjunto1.png')">
+                <!-- GALERIA DE IMAGEM INTERATIVA -->
                 <img src="imgs/conjunto/Conjunto2.png" alt="" class="thumbnail" onclick="changeImage('imgs/conjunto/Conjunto2.png')">
                 <img src="imgs/conjunto/Conjunto3.png" alt="" class="thumbnail" onclick="changeImage('imgs/conjunto/Conjunto3.png')">
             </div>
         </section>
-    
+
+        <!-- SEÇÃO DE DESCRIÇÃO DO PRODUTO -->
         <section class="info3">
             <h1>Sobre a Peça</h1>
-            <p>O conjunto do rapaz reflete elegância clássica e simplicidade nostálgica. O colete preto e a camisa listrada sugerem um gosto tradicional, enquanto o chapéu de lã evoca memórias de outra época, talvez de um artista ou escritor que valoriza peças com história e significado.</p>
+            <p>
+                O conjunto do rapaz reflete elegância clássica e simplicidade nostálgica. 
+                O colete preto e a camisa listrada sugerem um gosto tradicional, enquanto o chapéu de lã evoca memórias de outra época, talvez de um artista ou escritor que valoriza peças com história e significado.
+            </p>
         </section>
     </div>
 
+        <!-- RODAPÉ DA PAGINA -->
+        <footer>
+            <!-- INFORMAÇÕES IMPORTANTES -->
+            <div>
+                <h3>Informações Importantes</h3>
+                <!-- LINKS ÚTEIS PARA NAVEGAÇÃO E SUPORTE -->
+                <a href="#">Pesquisa</a>
+                <a href="#">Rastreamento</a>
+                <a href="#">Catálogo</a>
+                <a href="#">FAQ</a>
+                <a href="#">Envio e Prazo de Entrega</a>
+                <a href="#">Trocas e Devoluções</a>
+                <a href="#">Contato</a>
+            </div>
+            
+            <!-- SEÇÃO DAS POLITICAS DA EMPRESA -->
+            <div>
+                <h3>Nossas Políticas</h3>
+                <!-- LINKS PARA PAGINA DE POLITICAS LEGAIS -->
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Política de Troca e Devolução</a>
+                <a href="#">Política de Envio</a>
+                <a href="#">Termos de Serviço</a>
+            </div>
+            
+            <!-- SEÇÃO DA CENTRAL DE ATENDIMENTOS E REDES SOCIAIS -->
+            <div>
+                <h3>Central de Atendimento</h3>
+                <p>Contato para Atendimento:</p>
+                <p>WhatsApp: (11) 94567-7890</p>
+                
+            <!-- LINKS PARA REDES SOCIAIS -->
+            <div>
+                <h3>Redes Sociais</h3>
+            </div>
+             <div class="redes">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <!-- SEÇÃO PARA O USUARIO SE INSCREVER COM SEU E-MAIL -->
+            <div>
+                <h3>Receba Nossas Informações</h3>
+                <!-- FORMULARIO SIMPLES PARA O CADASTRO DO E-MAIL -->
+                <form class="inscreva-se">
+                    <input type="email" placeholder="Seu e-mail">
+                </form>
+            </div>
+        </footer>
+
     <script>
+        // VARIAVEL PARA ARMAZENAR O CONTADOR
         let count = 1;
 
+        // FUNÇÃO PARA INCREMENTAR O VALOR CONTADOR 
         function increment() {
-        count++;
-        document.getElementById('value').innerText = count;
+            count++;
+            document.getElementById('value').innerText = count;
         }
 
+        // FUNÇÃO PARA DECREMENTAR O VALOR DO CONTADOR
         function decrement() {
-        if (count > 0) count--;
-        document.getElementById('value').innerText = count;
+            if (count > 0) count--;
+            document.getElementById('value').innerText = count;
         }
 
+        // SELECIONA O ELEMENTO QUE EXIBE O TAMANHO ATUAL
         const currentSizeElement = document.getElementById("current-size");
+        // SELECIONA TODAS AS OPÇÕES DE TAMANHO
         const sizeOptions = document.querySelectorAll(".size-option");
 
+        // ADICIONA UM CLIQUE ÀS OPÇÕES DE TAMANHO
         sizeOptions.forEach(option => {
-        option.addEventListener("click", () => {
-            // Atualiza o tamanho selecionado
-            currentSizeElement.textContent = option.dataset.size;
-
-            // Atualiza a classe ativa
-            document.querySelector(".size-option.active")?.classList.remove("active");
-            option.classList.add("active");
-        });
+            option.addEventListener("click", () => {
+                currentSizeElement.textContent = option.dataset.size;
+                // ATUALIZA O TAMNHO SELECIONADO VISUALMETE
+                document.querySelector(".size-option.active")?.classList.remove("active");
+                option.classList.add("active");
+            });
         });
 
-        function changeImage(imageSrc) {
-    const image = document.querySelector(".info1 img");
+ // FUNÇÃO PARA TROCAR A IMAGEM PRINCIPAL PARA UMA TRANSIÇÃO SUAVE
+function changeImage(imageSrc) {
+    const image = document.querySelector(".info1 img"); 
+    // SELECIONA A IMAGEM PRINCIPAL DENTRO DO ELEMENTO COM A CLASSE "INFO1"
     
-    // Inicia o fade out
-    image.style.opacity = 0;
-
-    // Espera a transição de opacidade terminar
+    image.style.opacity = 0; 
+    // INICIA A TRANSIÇÃO, FAZENDO A IMAGEM FICAR INVISIVEL
     setTimeout(() => {
-        // Altera a fonte da imagem
-        image.src = imageSrc;
-        
-        // Aplica fade in
-        image.style.opacity = 1;
-    }, 250); // Tempo da transição (mesmo que o 'transition' no CSS)
+        image.src = imageSrc; 
+        // TROCA O CAMINHO DA IMAGEM PARA A NOVA IMAGEM 
+
+        image.style.opacity = 1; 
+        // FAZ A IMAGEM SE TORNAR VISIVEL NOVAMENTE
+    }, 250); 
+    // DEFINE UM ATRASO DE 250MS ANTES DE TROCAR A IMAGEM E VOLTA A SER VISIVEL (DURANTE A TRANSIÇÃO)
 }
 
     </script>

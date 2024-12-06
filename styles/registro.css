@@ -95,7 +95,7 @@ section h1{
 
 section form{
     width: 700px;
-    height: 500px;
+    height: 650px;
     background-color: white;
     box-shadow: 0 0 16px rgb(255, 255, 255);
     border-radius: 15px;
@@ -135,6 +135,18 @@ span{
   padding: 20px;
 }
 
+.input-cpf{
+  font-size: 48px;
+  font-family: 'Cinzel', serif;
+  border: black solid 1px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
+  font-family: 'Playfair', sans-serif;  
+  width: 400px;
+  height: 70px; 
+  padding: 20px;
+}
+
 .input-check{
     margin-left: 5%;
     font-size: 100px;   
@@ -158,9 +170,18 @@ span{
   justify-content: center;
 }
 
+.label-cpf{
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
 .label-senha{
   display: block;
   margin-bottom: 10px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -223,13 +244,21 @@ span{
 
 .email{
   display: flex;
+  display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  align-items: center;
 }
 
 .senha{
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.cpf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .checkbox{
